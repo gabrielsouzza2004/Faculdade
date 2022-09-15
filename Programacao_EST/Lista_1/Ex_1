@@ -7,16 +7,16 @@
 int main(int argc, char *argv[]) {
 	
 	int aluno[30]; //Declarei as variavies adicionando vetores 
-	int nota[30];
+	double nota[30];
 	int i;
 	
 	for (i=1;i<31;i++){   //utilizei o FOR para fazer uma repetição da pergunta "Digite a nota do aluno" 30 vezes 
 		printf("Digite a nota do aluno %d: ", i);  //imprimir "digite a nota do aluno" na tela e usei o %d para fazer uma contagem de alunos (1 a 30)
-		scanf("%d", &nota[i]); //recebe a entrada de dados digitado pelo usuário
+		scanf("%lf", &nota[i]); //recebe a entrada de dados digitado pelo usuário
 	}
 	system("cls"); \\Comando para limpar a tela
 	for (i=1;i<31;i++){ //Utilizei o for para fazer uma repeticao das notas digitadas pelo usuario
-		printf("Notas aluno %d: %d\n", i, nota[i] ); 
+		printf("Notas aluno %d: %.1lf\n", i, nota[i] ); 
 	}
 	
 }
